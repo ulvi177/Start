@@ -1,13 +1,617 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
-a {
-  color: orange;
+.imgbox img {
+  width: 100%;
 }
 
-a:hover {
-  color: black;
+header {
+  padding: 20px 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu nav a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  cursor: pointer;
+}
+header .menu nav a:hover {
+  color: rgb(242, 197, 49);
+}
+header .menu .btn {
+  display: none;
+}
+header .menu .imgbox {
+  width: 170px;
+}
+@media screen and (max-width: 992px) {
+  header .menu {
+    width: 100%;
+  }
+  header .menu nav {
+    display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 165, 157);
+    padding: 6px 10px 6px 10px;
+  }
+  header .menu .btn h3 {
+    color: rgb(203, 197, 186);
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  header .menu .btn .icon {
+    color: rgb(168, 165, 157);
+    margin-top: 2px;
+  }
+}
+@media screen and (max-width: 280px) {
+  header .menu {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+#welcome {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+#welcome .box {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcome .box .textbox h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+#welcome .box .textbox h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+}
+#welcome .box .textbox .btn {
+  font-size: 20px;
+  background-color: rgb(209, 178, 25);
+  padding: 18px 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+#welcome .box .textbox .btn h3 {
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  #welcome .box .textbox h2 {
+    font-size: 45px;
+  }
+  #welcome .box .textbox h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #welcome .box .textbox h2 {
+    font-size: 30px;
+  }
+  #welcome .box .textbox h1 {
+    font-size: 70px;
+  }
+}
+
+#services {
+  padding: 90px 0;
+}
+#services h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#services h3 {
+  margin: 20px 0 55px;
+  font-size: 20px;
+  color: rgb(112, 109, 105);
+}
+#services h1, #services h3 {
+  cursor: text;
+}
+#services h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#services h4 {
+  font-size: 20px;
+  color: rgb(145, 142, 136);
+}
+#services .box {
+  justify-content: center;
+  display: flex;
+}
+#services .box .icon {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(246, 185, 79);
+  border-radius: 70px;
+  width: 140px;
+  height: 140px;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+}
+
+#portfolio {
+  background-color: rgb(246, 246, 246);
+}
+#portfolio .textbox {
+  text-align: center;
+  padding: 40px 0 55px;
+}
+#portfolio .textbox h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: text;
+}
+#portfolio .textbox h3 {
+  color: rgb(171, 171, 171);
+  font-size: 20px;
+  cursor: text;
+}
+#portfolio .textbox h2 {
+  margin-top: 13px;
+  font-size: 30px;
+  font-weight: 700;
+}
+#portfolio .textbox h4 {
+  font-size: 20px;
+  color: rgb(171, 171, 171);
+}
+#portfolio .box {
+  margin-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+#portfolio .box .textbox {
+  padding: 0;
+}
+#portfolio .box .imgbox {
+  position: relative;
+}
+#portfolio .box .imgbox .icon {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+}
+#portfolio .box .imgbox .icon:hover {
+  background-color: rgb(237, 228, 48);
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  #portfolio .box .imgbox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #portfolio .textbox h1 {
+    font-size: 40px;
+  }
+  #portfolio .textbox h3 {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  #portfolio .box {
+    margin-bottom: 50px;
+    width: auto;
+  }
+}
+
+#about {
+  padding: 100px 0;
+}
+#about .text-center {
+  margin-bottom: 55px;
+}
+#about h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#about h3 {
+  font-size: 20px;
+  color: rgb(230, 229, 229);
+}
+#about h1, #about h3 {
+  cursor: text;
+}
+#about .box {
+  display: flex;
+  align-items: center;
+  margin: 0 0 100px 100px;
+}
+#about .box .imgbox {
+  width: 160px;
+  height: 160px;
+  border-radius: 200px;
+  border: 7px solid rgb(210, 209, 209);
+  margin: 0 34px;
+  overflow: hidden;
+}
+#about .box .textbox {
+  width: 400px;
+  margin: 0 10px;
+  text-align: end;
+}
+#about .box .textbox h2, #about .box .textbox h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+  cursor: text;
+}
+#about .box .textbox p {
+  font-size: 20px;
+  cursor: text;
+  line-height: 1.4;
+}
+#about .right {
+  justify-content: end;
+  margin: 0 100px 100px 0;
+}
+#about .right .textbox {
+  text-align: start;
+}
+#about .yellow {
+  display: flex;
+  justify-content: center;
+}
+#about .yellow .story {
+  width: 160px;
+  height: 160px;
+  background-color: rgb(255, 204, 93);
+  border-radius: 200px;
+  border: 7px solid rgb(206, 205, 202);
+}
+#about .yellow .story .minibox {
+  text-align: center;
+  padding: 30px 40px;
+}
+#about .yellow .story .minibox h2 {
+  font-size: 20px;
+  cursor: text;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-weight: 700;
+}
+@media screen and (max-width: 992px) {
+  #about .box {
+    margin: 0 0 100px 0;
+    align-items: flex-start;
+  }
+  #about .box .imgbox {
+    width: 140px;
+    height: 140px;
+  }
+  #about .box .textbox {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about .text-center h1 {
+    font-size: 55px;
+  }
+  #about .text-center h3 {
+    font-size: 18px;
+  }
+  #about .box {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 0 0 70px 0;
+  }
+  #about .box .textbox {
+    width: 400px;
+    text-align: start;
+  }
+  #about .box .imgbox {
+    width: 140px;
+    height: auto;
+    margin: 0;
+  }
+  #about .right {
+    margin: 0 0 70px 0;
+    flex-direction: row;
+  }
+  #about .right .textbox {
+    text-align: start;
+  }
+  #about .yellow {
+    justify-content: flex-start;
+  }
+  #about .yellow .story {
+    width: 140px;
+    height: 140px;
+  }
+  #about .yellow .story .minibox {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about .text-center h1 {
+    font-size: 50px;
+  }
+  #about .text-center h3 {
+    font-size: 18px;
+  }
+  #about .box .imgbox {
+    width: 100px;
+    height: auto;
+  }
+  #about .box .textbox h2, #about .box .textbox h4 {
+    font-size: 25px;
+  }
+  #about .box .textbox p {
+    font-size: 18px;
+  }
+  #about .yellow .story {
+    width: 90px;
+    height: 90px;
+  }
+  #about .yellow .story .minibox {
+    padding: 0 15px;
+  }
+  #about .yellow .story .minibox h2 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 310px) {
+  #about .yellow .story {
+    width: 50px;
+    height: 50px;
+  }
+  #about .yellow .story .minibox {
+    padding: 0 5px;
+  }
+  #about .yellow .story .minibox h2 {
+    font-size: 9px;
+  }
+}
+
+#team {
+  background-color: rgb(236, 236, 236);
+}
+#team .textbox {
+  margin-bottom: 55px;
+}
+#team .textbox h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 13px;
+  cursor: text;
+}
+#team .textbox h3 {
+  font-size: 20px;
+  color: rgb(204, 204, 204);
+  cursor: text;
+}
+#team .box .imgbox {
+  width: 220px;
+  border-radius: 60%;
+  border: 8px solid rgb(204, 204, 204);
+  overflow: hidden;
+}
+#team .box .textbox {
+  text-align: center;
+  margin: 15px 0;
+}
+#team .box .textbox h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#team .box .textbox h4 {
+  font-size: 19px;
+  color: rgb(204, 204, 204);
+}
+#team .box .textbox h2, #team .box .textbox h4 {
+  cursor: text;
+}
+#team .box ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#team .box ul li {
+  margin: 10px;
+}
+#team .box ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#team .box ul li:hover .icon {
+  background-color: rgb(146, 146, 146);
+  transition: 0.5s;
+}
+#team .textbox p {
+  font-size: 20px;
+  color: #828080;
+  line-height: 1.4;
+  cursor: text;
+  padding: 0 185px;
+}
+@media screen and (max-width: 992px) {
+  #team .textbox p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #team .textbox h3 {
+    font-size: 22px;
+  }
+  #team .textbox p {
+    padding: 0;
+  }
+  #team .box ul {
+    margin-bottom: 35px;
+  }
+}
+
+#sponsors {
+  padding: 60px 0;
+}
+#sponsors .box {
+  padding: 0 50px;
+}
+#sponsors .box .imgbox {
+  width: 120px;
+}
+#sponsors .box .microsoft {
+  width: 200px;
+}
+#sponsors .box .ibm {
+  width: 100px;
+}
+@media screen and (max-width: 576px) {
+  #sponsors .box .imgbox {
+    margin-top: 50px;
+  }
+}
+
+#contact {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  background-color: rgb(0, 0, 0);
+  background-position: center center;
+}
+#contact .box {
+  margin-top: 60px;
+}
+#contact .box h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+#contact .box h3 {
+  font-size: 20px;
+  color: rgb(171, 171, 171);
+}
+#contact .place {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+#contact .place input {
+  margin: 14px 0;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#contact .textbox {
+  display: flex;
+  margin-top: 55px;
+  font-size: 20px;
+}
+#contact .textbox textarea {
+  color: rgb(171, 171, 171);
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 30px;
+}
+#contact .btn {
+  padding: 15px 35px;
+  margin: 40px 0;
+  background-color: rgb(249, 210, 82);
+  border-radius: 7px;
+  opacity: 0.7;
+}
+#contact .btn h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  #contact .textbox {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact .box h1 {
+    font-size: 45px;
+  }
+  #contact .box h3 {
+    font-size: 18px;
+  }
+}
+
+footer {
+  padding: 22px 0;
+}
+footer .menu a {
+  color: #535151;
+  font-size: 18px;
+}
+footer .menu span {
+  margin: 0 20px;
+}
+footer .menu ul {
+  display: flex;
+  justify-content: center;
+}
+footer .menu ul li .icon {
+  font-size: 17px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #1a1919;
+  color: white;
+  margin: 0 12px;
+  border-radius: 30px;
+}
+footer .menu ul li .icon:hover {
+  background-color: #424649;
+  transition: 0.5s;
+}
+@media screen and (max-width: 992px) {
+  footer .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .menu ul {
+    margin: 15px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
