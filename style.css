@@ -14,7 +14,7 @@ header {
   right: 0;
   left: 0;
   top: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(27, 27, 27);
   width: 100%;
 }
 header .menu {
@@ -24,7 +24,7 @@ header .menu {
 }
 header .menu nav a {
   font-size: 18px;
-  color: rgb(255, 255, 255);
+  color: rgb(181, 179, 179);
   margin-right: 30px;
   cursor: pointer;
 }
@@ -47,17 +47,17 @@ header .menu .imgbox {
   header .menu .btn {
     display: flex;
     border-radius: 5px;
-    border: 1px solid rgb(168, 165, 157);
+    border: 1px solid rgb(171, 171, 171);
     padding: 6px 10px 6px 10px;
   }
   header .menu .btn h3 {
-    color: rgb(203, 197, 186);
+    color: rgb(171, 171, 171);
     font-weight: 700;
     font-size: 20px;
     margin-right: 10px;
   }
   header .menu .btn .icon {
-    color: rgb(168, 165, 157);
+    color: rgb(170, 170, 170);
     margin-top: 2px;
   }
 }
@@ -88,13 +88,13 @@ header .menu .imgbox {
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(237, 237, 237);
 }
 #welcome .box .textbox .btn {
   font-size: 20px;
-  background-color: rgb(209, 178, 25);
+  background-color: rgb(255, 213, 0);
   padding: 18px 40px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 253, 253);
   font-weight: 700;
 }
 #welcome .box .textbox .btn h3 {
@@ -150,7 +150,7 @@ header .menu .imgbox {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: rgb(246, 185, 79);
+  background-color: rgb(255, 203, 33);
   border-radius: 70px;
   width: 140px;
   height: 140px;
@@ -209,7 +209,7 @@ header .menu .imgbox {
   font-size: 60px;
 }
 #portfolio .box .imgbox .icon:hover {
-  background-color: rgb(237, 228, 48);
+  background-color: rgb(223, 183, 5);
   opacity: 1;
   transition: 0.5s;
   cursor: pointer;
@@ -294,9 +294,9 @@ header .menu .imgbox {
 #about .yellow .story {
   width: 160px;
   height: 160px;
-  background-color: rgb(255, 204, 93);
+  background-color: rgb(255, 213, 0);
   border-radius: 200px;
-  border: 7px solid rgb(206, 205, 202);
+  border: 7px solid rgb(243, 243, 243);
 }
 #about .yellow .story .minibox {
   text-align: center;
