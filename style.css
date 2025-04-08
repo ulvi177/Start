@@ -150,12 +150,11 @@ header .menu .imgbox {
   justify-content: center;
   display: flex;
   align-items: center;
-  background-color: rgb(255, 203, 33);
+  background-color: #f4bc06;
   border-radius: 70px;
   width: 140px;
   height: 140px;
   font-size: 70px;
-  color: rgb(255, 255, 255);
 }
 
 #portfolio {
