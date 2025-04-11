@@ -100,6 +100,9 @@ header .menu .imgbox {
 #welcome .box .textbox .btn h3 {
   cursor: pointer;
 }
+#welcome .box .textbox .btn:hover {
+  background-color: #f4af41;
+}
 @media screen and (max-width: 992px) {
   #welcome .box .textbox h2 {
     font-size: 45px;
